@@ -21,6 +21,6 @@ public class AppApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		personRepository.save(new Person("김은익", "데이터 분석", "kei4970@naver.com", "010-2466-4970"));
+		personRepository.save(new Person("김은익", "데이터 분석", "hello@test.com", "010-1234-5678"));
 	}
 }
