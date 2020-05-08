@@ -31,9 +31,9 @@ public class IndexController {
     public String index(Model model){
         Person person = personRepository.findAll().stream().findFirst().orElse(null);
         SocialMedia socialMedia = socialMediaRepository.findAll().stream().findFirst().orElse(null);
-        List<SocialMedia> interests = interestsRepository.findAll();
-        List<Person> skills = skillRepository.findAll();
-        List<SocialMedia> works = workRepository.findAll();
+        List<Interests> interests = interestsRepository.findAll();
+        List<Skill> skills = skillRepository.findAll();
+        List<Work> works = workRepository.findAll();
         model.addAttribute("works", works);
         model.addAttribute("skills", skills);
         model.addAttribute("interests", interests);
