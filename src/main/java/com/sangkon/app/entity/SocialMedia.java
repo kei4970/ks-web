@@ -8,10 +8,16 @@ import javax.persistence.Id;
 public class SocialMedia {
     @Id
     @GeneratedValue
+    private Long id;
+
     private String instagram;
     private String facebook;
     private String twitter;
     private String github;
+
+    public SocialMedia(){
+
+    }
 
     public SocialMedia(String instagram, String facebook, String twitter, String github){
         this.facebook = facebook;
@@ -20,13 +26,22 @@ public class SocialMedia {
         this.twitter = twitter;
     }
 
-    public String getfacebook() {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getFacebook() {
         return facebook;
     }
 
-    public void setfacebook(String facebook) {
+    public void setFacebook(String facebook) {
         this.facebook = facebook;
     }
+
     public String getInstagram() {
         return instagram;
     }

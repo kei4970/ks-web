@@ -9,6 +9,7 @@ public class Person {
     @Id
     @GeneratedValue
     private Long id;
+
     private String name;
     private String job;
     private String email;
@@ -56,11 +57,11 @@ public class Person {
         this.email = email;
     }
 
-    public String getphoneNo(){
+    public String getPhoneNo(){
         return phoneNo;
     }
 
-    public void setphoneNo(String phoneNo){
+    public void setPhoneNo(String phoneNo){
         this.phoneNo = phoneNo;
     }
 }

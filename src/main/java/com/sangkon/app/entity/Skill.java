@@ -8,19 +8,33 @@ import javax.persistence.Id;
 public class Skill {
     @Id
     @GeneratedValue
+    private Long id;
+
     private String name;
     private Integer grade;
+
+    public Skill(){
+
+    }
 
     public Skill(String name, Integer grade){
         this.grade = grade;
         this.name = name;
     }
 
-    public String getname(){
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(){
+        this.id = id;
+    }
+
+    public String getName(){
         return name;
     }
 
-    public void setname(String name){
+    public void setName(String name){
         this.name = name;
     }
 
